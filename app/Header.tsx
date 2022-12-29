@@ -7,8 +7,10 @@ import SearchBox from "./SearchBox";
 function Header() {
   return (
     <header>
-      <div className="grid grid-cols-3 p-10 items-center">
-        <Bars3Icon className="h-8 w-8 cursor-pointer" />
+      <div className="grid grid-cols-[minmax(32px,_32px)_1fr_minmax(32px,_32px)] p-10 items-center justify-center md:grid-cols-3">
+        <div className="w-8">
+          <Bars3Icon className="h-8 w-8 cursor-pointer" />
+        </div>
         <Link href="/" prefetch={false}>
           <h1 className="font-serif text-4xl text-center">
             The{" "}

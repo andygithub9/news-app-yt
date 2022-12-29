@@ -1,3 +1,5 @@
+# 開始使用 graphql 和 StepZen
+
 1. Install graphql-request graphql
    `yarn add graphql-request graphql`
    https://www.npmjs.com/package/graphql-request
@@ -72,3 +74,18 @@ type Query {
   ): Root @rest(endpoint: "http://api.mediastack.com/v1/news")
 }
 ```
+
+# 用 Vercel Cli 部署 Next.js 應用程序到 Vercel
+
+1. 安裝 Vercel Cli  
+   `npm i -g vercel`
+2. 登入 Vercel  
+   `vercel login`
+3. 部署 Next.js 應用程序到 Vercel
+   `vercel`  
+   第一次會失敗, 因為我們沒有設定環境變數
+4. 到 Vercel 的網站找到你現在部署的專案, 點擊 Settings, 點擊 Environment Variables, 把 .env.local 中的環境變數輸入進去後, 點擊 Save
+5. 用 Vercel 建置專案  
+   `vercel build`
+6. 再重新部署一次  
+   `vercel`
